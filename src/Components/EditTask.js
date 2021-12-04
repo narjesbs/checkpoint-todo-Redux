@@ -12,7 +12,7 @@ function EditTask({task}) {
   const handleShow = () => setShow(true);
   const edit = () => {
     dispatch (editTask(task.id,editTodo));
-    handleClose();
+    handleClose(); 
   }
 
     return(
