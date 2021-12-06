@@ -28,7 +28,7 @@ import { ADD_TASK,EDIT_TASK,DELETE_TASK,COMPLETE_TASK } from "./Types";
         }   
       case EDIT_TASK:
         return {...state, 
-          tasks: state.tasks.map ((el) => el.id === action.id ? {...el, tasks: action.newTodo}  : el)
+          tasks: state.tasks.map ((el) => el.id === action.id ? {...el, description: action.newTodo}  : el)
         } 
       case DELETE_TASK:
         return {...state,
